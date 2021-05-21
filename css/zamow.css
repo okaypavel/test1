@@ -1,0 +1,120 @@
+body {
+    background-color: #262626;
+    color: white;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+input:focus {
+    outline: none;
+}
+textarea:focus {
+    outline: none;
+}
+
+
+.main-nav {
+    background-color: #1a1a1a;
+    color: #ffdd00;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+.nav-a-active{
+    color: #ffdd00;
+}
+.nav-a-active:hover{
+    color: #ffdd00;
+}
+.nav-a{
+    color: #808080;
+}
+.nav-a:hover{
+    color: #ffdd00;
+}
+
+.p-text-heading{
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 70px;
+    color: #ffdd00;
+}
+.p-text{
+    text-align: center;
+    padding-top: 15px;
+    margin-left: 330px;
+    margin-right: 330px;
+    color: #1a1a1a;
+}
+.border-main{
+    border-bottom: 2px solid #ffdd00;
+    width: 100px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+.contact-h{
+    height: 100px;
+}
+.contact{
+    color: white;
+    margin-left: 25px;
+    font-size: 0.8rem;
+}
+.input-main{
+    margin-top: 50px;
+    margin-left: 25px;
+}
+.button-input{
+    background-color: white;
+}
+.btn-main-pizzaname{
+    background-color: #262626;
+    color: white;
+    border-color: #ffdd00;
+}
+.btn-main-pizzaname:hover{
+    background-color: #ffdd00;
+    color: #262626;
+    border-color: white;
+}
+.btn-main-pizzaname:focus {
+    background-color: #ffdd00;
+    color: #262626;
+    border-color: white;
+}
+.img-pizza{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+}
+
+.img-margin{
+    margin-top: 15px;
+}
+.p-inp-main{
+    padding-left: 15px;
+    color: red;
+}
+.inp-text-name{
+    width: 500px;
+    height: 41px;
+}
+.inp-text-surname{
+    width: 500px;
+    height: 41px;
+}
+.inp-text-email{
+    width: 500px;
+    height: 41px;
+}
+.inp-text-num{
+    width: 500px;
+    height: 41px;
+}
+.text-main-wiad{
+    min-width: 500px;
+    min-height: 100px;
+    max-width: 500px;
+    max-height: 100px;
+}

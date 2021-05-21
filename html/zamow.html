@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Złóż zamówienie</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/zamow.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg main-nav">
+        <div class="container-fluid">
+            <span class="navbar-brand">Pizza Man</span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active nav-a" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-a" href="./opinie.html">Opinie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-a-active" href="#">Złóż zamówienie</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="zloz">
+        <p class="p-text-heading">Złóż zamówienie</p>
+    </div>
+    <div>
+        <p class="border-main"></p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                    <div class="btn-group me-2" role="group" aria-label="First group">
+                        <button type="button" class="btn btn-main-pizzaname">Pizza Pepperoni</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                    <div class="btn-group me-2" role="group" aria-label="First group">
+                        <button type="button" class="btn btn-main-pizzaname">Pizza Hawajska</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                    <div class="btn-group me-2" role="group" aria-label="First group">
+                        <button type="button" class="btn btn-main-pizzaname">Pizza Cztery Sery</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                    <div class="btn-group me-2" role="group" aria-label="First group">
+                        <button type="button" class="btn btn-main-pizzaname">Pizza Carbonara</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                    <div class="btn-group me-2" role="group" aria-label="First group">
+                        <button type="button" class="btn btn-main-pizzaname">Pizza Margarita</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row img-margin">
+            <div class="col-sm">
+                <img src="../img/peppe.jpg" alt="Pepperoni" class="img-pizza">
+            </div>
+            <div class="col-sm">
+                <img src="../img/gawai.jpg" alt="Hawajska" class="img-pizza">
+            </div>
+            <div class="col-sm">
+                <img src="../img/4sery.jpg" alt="4 sery" class="img-pizza">
+            </div>
+            <div class="col-sm">
+                <img src="../img/karb.jpg" alt="Carbonara" class="img-pizza">
+            </div>
+            <div class="col-sm">
+                <img src="../img/marg.jpg" alt="Margarita" class="img-pizza">
+            </div>
+        </div>
+    </div>
+
+    <div class="input-main">
+        <div class="input-group mb-3">
+            <input type="text" class="inp-text-name" placeholder="Imie" aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default" id="inp1" onchange="changeImie()">
+                <p class="p-inp-main" id="p1" style="visibility: hidden;">Imię nie może być krótsze niż 3 znaki.</p>
+        </div>
+        <div class="input-group mb-3">
+            <input type="text" class="inp-text-surname" placeholder="Nazwisko" aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default" id="inp2" onchange="changeNazwisko()">
+                <p class="p-inp-main" id="p2" style="visibility: hidden;">Nazwisko nie może być krótsze niż 4 znaki.</p>
+        </div>
+        <div class="input-group mb-3">
+            <input type="text" class="inp-text-email" placeholder="E-mail" aria-label="Recipient's username"
+                aria-describedby="basic-addon2" id="inp3" onchange="changeEmail(value)">
+            <p class="p-inp-main" id="p3" style="visibility: hidden;" >Adres e-mail musi posiadać "@" w sobie.</p>
+        </div>
+        <div class="input-group mb-3">
+            <input type="text" class="inp-text-num" placeholder="Telefon" aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default" id="inp4" onchange="changeTelefon(value)">
+                <p class="p-inp-main" id="p4-1" style="visibility: hidden;">Numer telefonu musi mieć cyfry i tylko cyfry</p>
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group">
+                <textarea class="text-main-wiad" aria-label="With textarea" placeholder="Komentarz przed zamówieniem" id="inp5" onchange="changeWiadomosc()"></textarea>
+                <p class="p-inp-main" id="p5" style="visibility: hidden;">Wiadomość do sprzedającego nie może być krótsza niż 10 znaków.</p>
+            </div>
+            <button class="btn btn-outline-secondary button-input" type="button" id="button-addon2" onclick="go(value)">Zamówić</button>
+        </div>
+    </div>
+
+    <div class="contact-h">
+        <p class="contact">
+            Kontakt:
+            <br>
+            Numer: +488-888-88-88
+            <br>
+            e-mail: pizzaman@pizza.pl
+            <br>
+            Adres: ul. ooo 12
+        </p>
+    </div>
+
+    <script src="../main.js"></script>
+</body>
+
+</html>
